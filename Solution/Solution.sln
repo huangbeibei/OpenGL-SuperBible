@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Block", "..\chapt01\Block\Block.vcxproj", "{103C14C9-F2B3-4CE3-A8B1-6F93999371F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{94256339-A3AA-43B2-914C-EDB75E80BCDB} = {94256339-A3AA-43B2-914C-EDB75E80BCDB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\common\common.vcxproj", "{94256339-A3AA-43B2-914C-EDB75E80BCDB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Triangle", "..\chapt02\Triangle\Triangle.vcxproj", "{E658E763-3889-4C9F-AFD0-E3EA697B7A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapt01", "chapt01", "{B5D7FB75-8C02-470A-89F4-A84295EB4C89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapt02", "chapt02", "{4D53E972-FBAA-40AA-BDD8-DDFF17B7CAF0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bounce", "..\chapt02\Bounce\Bounce.vcxproj", "{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Move", "..\chapt02\Move\Move.vcxproj", "{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapt03", "chapt03", "{FAF1EBAA-5E94-44B5-B067-F7000106532F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Primitives", "..\chapt03\Primitives\Primitives.vcxproj", "{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{103C14C9-F2B3-4CE3-A8B1-6F93999371F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{103C14C9-F2B3-4CE3-A8B1-6F93999371F6}.Debug|Win32.Build.0 = Debug|Win32
+		{103C14C9-F2B3-4CE3-A8B1-6F93999371F6}.Release|Win32.ActiveCfg = Release|Win32
+		{103C14C9-F2B3-4CE3-A8B1-6F93999371F6}.Release|Win32.Build.0 = Release|Win32
+		{94256339-A3AA-43B2-914C-EDB75E80BCDB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{94256339-A3AA-43B2-914C-EDB75E80BCDB}.Debug|Win32.Build.0 = Debug|Win32
+		{94256339-A3AA-43B2-914C-EDB75E80BCDB}.Release|Win32.ActiveCfg = Release|Win32
+		{94256339-A3AA-43B2-914C-EDB75E80BCDB}.Release|Win32.Build.0 = Release|Win32
+		{E658E763-3889-4C9F-AFD0-E3EA697B7A1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E658E763-3889-4C9F-AFD0-E3EA697B7A1B}.Debug|Win32.Build.0 = Debug|Win32
+		{E658E763-3889-4C9F-AFD0-E3EA697B7A1B}.Release|Win32.ActiveCfg = Release|Win32
+		{E658E763-3889-4C9F-AFD0-E3EA697B7A1B}.Release|Win32.Build.0 = Release|Win32
+		{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2}.Debug|Win32.Build.0 = Debug|Win32
+		{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2}.Release|Win32.ActiveCfg = Release|Win32
+		{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2}.Release|Win32.Build.0 = Release|Win32
+		{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA}.Debug|Win32.Build.0 = Debug|Win32
+		{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA}.Release|Win32.ActiveCfg = Release|Win32
+		{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA}.Release|Win32.Build.0 = Release|Win32
+		{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F}.Debug|Win32.Build.0 = Debug|Win32
+		{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F}.Release|Win32.ActiveCfg = Release|Win32
+		{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{103C14C9-F2B3-4CE3-A8B1-6F93999371F6} = {B5D7FB75-8C02-470A-89F4-A84295EB4C89}
+		{E658E763-3889-4C9F-AFD0-E3EA697B7A1B} = {4D53E972-FBAA-40AA-BDD8-DDFF17B7CAF0}
+		{9C6805A9-FD91-4B8C-9A42-F0FD9E06EDD2} = {4D53E972-FBAA-40AA-BDD8-DDFF17B7CAF0}
+		{A4AAC07E-A6CB-4A7D-A79C-0EF9FAD2D0AA} = {4D53E972-FBAA-40AA-BDD8-DDFF17B7CAF0}
+		{E939D9A6-C6DA-4DDD-9560-F1876E0AB02F} = {FAF1EBAA-5E94-44B5-B067-F7000106532F}
+	EndGlobalSection
+EndGlobal
