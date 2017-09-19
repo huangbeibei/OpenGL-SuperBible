@@ -1,7 +1,8 @@
 Debug/
 Release/
-*.user
 ipch/
-Solution/Solution.sdf
-Solution/Solution.v12.suo
+*.user
 *.txt
+Solution/Solution.sdf
+Solution/Solution.opensdf
+Solution/Solution.v12.suo

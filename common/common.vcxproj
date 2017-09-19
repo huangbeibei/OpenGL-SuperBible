@@ -92,6 +92,7 @@
   <ItemGroup>
     <ClInclude Include="glbatch.h" />
     <ClInclude Include="GLBatchBase.h" />
+    <ClInclude Include="GLFrame.h" />
     <ClInclude Include="GLFrustum.h" />
     <ClInclude Include="GLGeometryTransform.h" />
     <ClInclude Include="GLMatrixStack.h" />

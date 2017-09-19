@@ -71,7 +71,9 @@ void RenderScene(void)
 
     glutSwapBuffers();
 
-    // RenderScene只有在窗口最小化、最大化、覆盖或重新显示等时才会调用，并不是每一帧都调用，glutPostRedisplay用于人工调用，告诉GLUT应该对场景进行渲染了
+    // RenderScene is called when window minimizing/window maximizing/window be covered/window display again, 
+    // it's not called for every frame. 
+    // When the scene should be rendered, glutPostRedisplay is called
     BounceFunction();
     glutPostRedisplay();
 }

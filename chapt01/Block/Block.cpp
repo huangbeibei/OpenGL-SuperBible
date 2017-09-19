@@ -3,12 +3,12 @@
 #include <GLShaderManager.h>
 #include <GLGeometryTransform.h>
 #include <GLFrustum.h>
-#include <GL/glut.h>	// 用于和操作系统UI交互的库
+#include <GL/glut.h>
 
 GLMatrixStack			modelViewMatrix;
 GLMatrixStack			projectionMatrix;
 GLGeometryTransform		transformPipeline;
-GLFrame					cameraFrame;			// eye/center/up类
+GLFrame					cameraFrame;			// class for eye/center/up
 GLFrustum				viewFrustum;
 GLShaderManager			shaderManager;
 
@@ -212,14 +212,14 @@ void SetupRC()
     GLint nWidth, nHeight, nComponents;
     GLenum format;
 
-	// 准备shader的代码
+	// prepare code of shader
 	shaderManager.InitializeStockShaders();
 
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glEnable(GL_DEPTH_TEST);
 	glLineWidth(2.5f);
-	// question:不加这一句线条的锯齿就很严重，为什么？
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	// question: why the line's alias is heavy without this sentence?
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 
 	transformPipeline.SetMatrixStacks(modelViewMatrix, projectionMatrix);
@@ -345,7 +345,7 @@ void RenderBlock(void)
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         glDisable(GL_CULL_FACE);
 
-        // 绘制方块
+        // draw the cube
         cubeBatch.Draw();
 
         break;
@@ -396,7 +396,7 @@ void RenderBlock(void)
         break;
     }
 
-	// 状态还原
+	// restore state
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	glEnable(GL_CULL_FACE);
 	glDisable(GL_BLEND);
@@ -416,9 +416,9 @@ void RenderFloor(void)
         glEnable(GL_BLEND);
         glEnable(GL_LINE_SMOOTH);
         shaderManager.UseStockShader(GLT_SHADER_FLAT, transformPipeline.GetModelViewProjectionMatrix(), vBrown);
-        // 绘制模型的线而非面
+        // draw line mode instead of face
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-        // 禁用背面剔除，使背面的线也能显示
+        // disable backface culling, which enables displaying backface lines
         glDisable(GL_CULL_FACE);
         break;
 
@@ -445,10 +445,10 @@ void RenderFloor(void)
         break;
     }
 
-    // 绘制地板
+    // draw the floor
     floorBatch.Draw();
 
-    // 状态还原
+    // restore state
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glEnable(GL_CULL_FACE);
     glDisable(GL_BLEND);
@@ -534,7 +534,6 @@ int main(int argc, char* argv[])
 
 	SetupRC();
 
-	// 阻塞窗口
 	glutMainLoop();
 
 	return 0;

@@ -59,5 +59,8 @@
     <ClInclude Include="GLFrustum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GLFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

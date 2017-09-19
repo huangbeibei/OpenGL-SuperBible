@@ -34,13 +34,13 @@ void RenderScene()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     
-    // Question : shader和draw的顺序似乎无关紧要？
+    // Question : the order of shader and draw doesn't matter？
     GLfloat vRed[] = { 1.0f, 0.0f, 1.0f, 1.0f };
-    // 传入参数，glUseProgram
+    // input parameter，glUseProgram
     shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
    
     triangleBatch.Draw();
-
+    
     glutSwapBuffers();
 }
 
