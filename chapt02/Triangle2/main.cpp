@@ -12,7 +12,7 @@
 //GLShaderManager shaderManager;
 
 GLuint hProgram;                // shader程序
-GLuint vertexArrayObject = 0;   // VAO对象
+GLuint vertexArrayObject = 0;   // VAO对象（保存了缓冲区对象和顶点属性索引号的关系）
 GLuint uiVertexArray = 0;       // VBO对象
 int vertexAttributeIndex = 0;   // 顶点属性索引号（只使用了0）
 int nNumVerts = 3;              // 顶点数目
