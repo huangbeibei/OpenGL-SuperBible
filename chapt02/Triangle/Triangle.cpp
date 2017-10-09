@@ -7,7 +7,7 @@
 #include <GLTools.h>
 
 #include <iostream>
-
+| 
 GLBatch triangleBatch;
 GLShaderManager shaderManager;
 
