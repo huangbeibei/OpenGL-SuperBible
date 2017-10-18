@@ -1,3 +1,5 @@
+// 剖析Triangle程序最底层源码，理解绘制三角形的过程，体会“OpenGL是一个状态机”
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 

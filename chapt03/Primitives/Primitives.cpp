@@ -1,3 +1,5 @@
+// OpenGL不同类型的几何图元、为了避免z-fighting的glPolygonOffset设置、多边形的点线绘制模式
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 
@@ -10,6 +12,7 @@
 #include <GLBatch.h>
 #include <GLFrustum.h>
 #include <iostream>
+
 
 GLShaderManager     shaderManager;
 GLMatrixStack       modelViewMatrix;

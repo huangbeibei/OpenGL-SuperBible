@@ -1,3 +1,5 @@
+// 前后裁剪面GL_CULL_FACE、深度测试DEPTH_TEST:OpenGL的内置功能保证绘制效果不会因为物体绘制的先后顺序出现问题
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 

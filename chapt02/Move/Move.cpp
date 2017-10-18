@@ -1,3 +1,5 @@
+// 小动画，演示鼠标操作、程序持续刷新的效果
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 

@@ -1,3 +1,5 @@
+// 小动画，程序自动刷新的效果
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 

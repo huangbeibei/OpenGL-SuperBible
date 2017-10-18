@@ -1,3 +1,5 @@
+// 绘制一个最简单的三角形，程序基本框架结构
+
 #define FREEGLUT_STATIC
 #define GLEW_STATIC
 
@@ -7,7 +9,7 @@
 #include <GLTools.h>
 
 #include <iostream>
-| 
+ 
 GLBatch triangleBatch;
 GLShaderManager shaderManager;
 
